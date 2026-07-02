@@ -8,6 +8,7 @@ node_modules/
 *.pyc
 *.env
 config/.env.*
+!config/.env.example
 DEPS.true
 /.vscode
 .mono
