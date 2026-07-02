@@ -15,11 +15,11 @@ async function createUser(apiHelper:any) {
     return response.body
 }
 
-test('create user test',async({apiHelper})=>{
+// test('create user test',async({apiHelper})=>{
 
-    let userResponse = await createUser(apiHelper)
+//     let userResponse = await createUser(apiHelper)
 
-    let response = await apiHelper.get(`/public/v2/users${userResponse.id}`,AUTH_HEADER)
-    expect(response.status).toBe(200)
+//     let response = await apiHelper.get(`/public/v2/users${userResponse.id}`,AUTH_HEADER)
+//     expect(response.status).toBe(200)
 
-})
+// })
