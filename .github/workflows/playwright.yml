@@ -4,6 +4,17 @@ on:
     branches: [ main]
   pull_request:
     branches: [ main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select environment'
+        required: true
+        default: 'QA'
+        type: choice
+        options:
+          - QA
+          - stage
+          - dev    
 jobs:
   test:
     timeout-minutes: 60
@@ -42,7 +53,7 @@ jobs:
       run: npx playwright test --project=chromium
       env:
           DEBUG: pw:browser
-          ENV: qa
+          ENV: ${{ github.event.inputs.environment || 'QA' }}
           BASE_URL: ${{ secrets.BASE_URL }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
