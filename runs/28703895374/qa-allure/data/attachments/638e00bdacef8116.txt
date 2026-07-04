@@ -1,0 +1,74 @@
+[
+  {
+    id: 8536302,
+    name: 'Jagmeet API',
+    email: 'automation_1783163202478@open.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8536301,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783163201735@open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8536300,
+    name: 'Jagmeet New',
+    email: 'automation_1783163201392@open.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8536299,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783163200034@open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8531894,
+    name: 'Jagmeet Guneta 1',
+    email: 'automation_1783162825147@open.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8536292,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783162824683@open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8536291,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783162823913@open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8536289,
+    name: 'Jagmeet New',
+    email: 'automation_1783162822467@open.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8536290,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783162822797@open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8536288,
+    name: 'Jagmeet Guneta',
+    email: 'automation_1783162821129@open.com',
+    gender: 'female',
+    status: 'active'
+  }
+]
+200
+OK
