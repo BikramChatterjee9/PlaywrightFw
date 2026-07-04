@@ -1,0 +1,73 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: loginPage.spec.ts >> login forgot password link
+- Location: tests/loginPage.spec.ts:16:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded while running "beforeEach" hook.
+```
+
+```
+Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://naveenautomationlabs.com/opencart/index.php?route=account/login", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import { Locator, Page } from "@playwright/test";
+  2  | import { BasePage } from "./BasePage";
+  3  | 
+  4  | 
+  5  | export class LoginPage extends BasePage
+  6  | {
+  7  |     private readonly emailId:Locator
+  8  |     private readonly password:Locator
+  9  |     private readonly loginButton:Locator
+  10 |     private readonly fotgotPasswordLink:Locator
+  11 |     private readonly logo:Locator
+  12 | 
+  13 |     constructor(page:Page)
+  14 |     {
+  15 |         super(page)
+  16 |         this.emailId=page.getByRole('textbox',{name:'E-Mail Address'})
+  17 |         this.password=page.getByRole('textbox',{name:'Password'})
+  18 |         this.loginButton=page.getByRole('button',{name:'Login'})
+  19 |         this.fotgotPasswordLink=page.getByRole('link',{name:'Forgotten Password'}).first()
+  20 |         this.logo=page.getByAltText('naveenopencart')
+  21 |     }
+  22 | 
+  23 |     async gotoLoginPage():Promise<void>
+  24 |     {
+> 25 |         await this.page.goto('opencart/index.php?route=account/login')
+     |                         ^ Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+  26 |     }
+  27 | 
+  28 |     async getLoginPageTitle():Promise<String>
+  29 |     {
+  30 |          return await this.page.title()
+  31 |     }
+  32 | 
+  33 |     async isForgotPassLink():Promise<boolean>
+  34 |     {
+  35 |         return await this.fotgotPasswordLink.isVisible()
+  36 |     }
+  37 | 
+  38 |     async doLogin(username:string,password:string):Promise<void>
+  39 |     {
+  40 |         await this.emailId.fill(username)
+  41 |         await this.password.fill(password)
+  42 |         await this.loginButton.click()
+  43 |     }
+  44 | }
+```
