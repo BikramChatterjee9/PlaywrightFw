@@ -74,7 +74,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: https://github.com/BikramChatterjee9/PlaywrightFw.git
+          repository: BikramChatterjee9/PlaywrightFw
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -155,7 +155,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: https://github.com/BikramChatterjee9/PlaywrightFw.git
+          repository: BikramChatterjee9/PlaywrightFw
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -236,7 +236,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: https://github.com/BikramChatterjee9/PlaywrightFw.git
+          repository: BikramChatterjee9/PlaywrightFw
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -318,7 +318,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: https://github.com/BikramChatterjee9/PlaywrightFw.git
+          repository: BikramChatterjee9/PlaywrightFw
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
