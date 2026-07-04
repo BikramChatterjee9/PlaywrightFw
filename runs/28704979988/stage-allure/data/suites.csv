@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2379","login forgot password link","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
-"","2312","login title test","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
-"","3048","login to app","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
+"","2336","login forgot password link","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
+"","3182","login to app","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
+"","2169","login title test","chromium","2026-07-04","passed","2026-07-04","","loginPage.spec.ts","",""
